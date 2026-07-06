@@ -1,6 +1,6 @@
 # Contributing Guide
 
-Thank you for contributing to trainer-ai-labs.
+Thank you for contributing to trainerhub.
 
 ## Rule 1: English by Default
 
@@ -21,6 +21,8 @@ Allowed exceptions:
 - External quoted text that must remain unchanged
 
 If you add non-English content, include an English summary when practical so global contributors can follow.
+
+English is the baseline for shared repository content so contributors across regions can work from the same default.
 
 ## How to Add a Demo
 

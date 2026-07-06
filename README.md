@@ -1,23 +1,22 @@
-# trainer-ai-labs
+# trainerhub
 
-Collaborative repository for building, sharing, and reusing demos, AI-powered trainer tools, and templates for modern technical training.
-
-This initiative started as a team effort to centralize reusable assets for trainers, with a focus on improving productivity, consistency, and scalability of training delivery. The repository is designed for internal collaboration today and potential external sharing in the future.
+trainerhub is a shared repository for training assets, demos, scenarios, code samples, and reusable content for technical trainers.
 
 ## Purpose
 
 - Reuse practical training assets across teams
 - Reduce duplicated effort when creating hands-on content
 - Keep demo and lab quality consistent
-- Accelerate experimentation with AI-powered trainer workflows
+- Support fast iteration on trainer workflows and delivery materials
 
-## Repository Language Policy
+## Language Policy
 
-1. English by default: Use English as the default language for all new repository content.
+1. English by default: Use English as the default language for new repository content.
 2. Multilingual support: Non-English content is allowed when it improves audience reach, local delivery quality, or training outcomes.
-3. Scope: Applies to README files, docs, templates, PR titles/descriptions, issue content, and code comments.
-4. Practical guidance: When adding non-English content, include an English summary (or bilingual headings) when practical.
-5. Automation: CI provides language-policy guidance for consistency, but does not block multilingual contributions.
+3. Scope: This applies to README files, docs, templates, PR titles and descriptions, issue content, and code comments.
+4. Practical guidance: When adding non-English content, include an English summary or bilingual headings when practical.
+5. Team usage: English is the baseline for shared content so contributors across regions can collaborate consistently.
+6. Automation: CI may provide language-policy guidance for consistency, but it does not block multilingual contributions.
 
 ## Repository Structure
 
@@ -56,47 +55,36 @@ This initiative started as a team effort to centralize reusable assets for train
 └─ Templates/
 ```
 
-### Folder Guide
+## Folder Guide
 
-- `Courses/`: Course-specific assets and learning resources organized by official course code
-	- `Courses/AI-3026/`, `Courses/AI-3016/`, `Courses/GH-300/`, `Courses/PL-7008/`
-- `Demos/`: Hands-on demos and runnable examples grouped by solution area
-	- `Demos/AI/`, `Demos/Copilot/`, `Demos/Foundry/`, `Demos/Fabric/`
-- `Agents/`: AI-powered trainer tools, assistants, and agent workflows
-	- `Agents/Trainer Skills/`, `Agents/Copilot Studio/`, `Agents/Custom Agents/`
-- `Scenarios/`: Story-driven references for customer and field usage contexts
-	- `Scenarios/Customer Stories/`, `Scenarios/Industry Use Cases/`, `Scenarios/Field Examples/`
-- `Code/`: Reusable implementation assets and utilities
-	- `Code/Samples/`, `Code/Snippets/`, `Code/Scripts/`
-- `Learning-Day/`: Session-based knowledge archive by date
-	- `Learning-Day/20260703/Docs/`, `Learning-Day/20260703/Recordings/`
-	- `Learning-Day/20260807/Docs/`, `Learning-Day/20260807/Recordings/`
-- `Best-Practices/`: Curated best practices, checklists, and standards
-- `Templates/`: Reusable templates for guides, lab instructions, and content scaffolding
+- [Courses/](Courses/): Course-specific assets and learning resources organized by official course code
+- [Demos/](Demos/): Hands-on demos and runnable examples grouped by solution area
+- [Agents/](Agents/): AI-powered trainer tools, assistants, and agent workflows
+- [Scenarios/](Scenarios/): Story-driven references for customer and field usage contexts
+- [Code/](Code/): Reusable implementation assets and utilities
+- [Learning-Day/](Learning-Day/): Session-based knowledge archive by date
+- [Best-Practices/](Best-Practices/): Curated best practices, checklists, and standards
+- [Templates/](Templates/): Reusable templates for guides, lab instructions, and content scaffolding
 
 ## Contribution Guidelines
 
 Contributors are encouraged to add demos, agents, and templates that are practical, reusable, and easy for other trainers to adopt.
 
-### 1) Adding a Demo
+### Adding Content
 
-- Create a feature folder under the most relevant path in `Demos/`
-- Include a short `README.md` in the demo folder with:
-	- Objective
-	- Prerequisites
-	- Setup steps
-	- Run/verification steps
-- Add sample data or scripts only when required for understanding or execution
-- Keep demos reproducible in a fresh environment
+- Place new material in the most relevant folder.
+- Add a short README when a folder needs setup or usage instructions.
+- Keep examples reproducible and easy to validate.
+- Prefer reusable templates and shared assets when possible.
 
-### 2) Folder Structure Principles
+## Folder Structure Principles
 
 - Group by capability first (Courses, Demos, Agents, Scenarios, Code, Learning-Day, Best-Practices, Templates)
 - Keep nesting shallow (prefer 2-3 levels)
 - One clear purpose per folder
 - Store shared assets in a local `assets/` folder when needed
 
-### 3) Naming Conventions
+## Naming Conventions
 
 - Follow the established repository folder names as defined above
 - Keep names short, specific, and searchable
@@ -131,7 +119,7 @@ This repository includes a default dev container configuration for GitHub Codesp
 - Base image: `mcr.microsoft.com/devcontainers/universal:2`
 - Recommended VS Code extensions for Azure, Python, PowerShell, and Markdown
 
-### Notes
+## Notes
 
 - This repository contains multiple demos, scenarios, and course assets, so run steps are defined per folder.
 - Check each demo or agent folder README for prerequisites and execution commands.
@@ -148,5 +136,5 @@ To keep this repository maintainable as contributions grow:
 
 ## Collaboration Note
 
-This is a practical working space for technical trainers. Contributions should prioritize clarity, reuse, and real training value over completeness.
+Prioritize clarity, reuse, and real training value over completeness.
 

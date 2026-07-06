@@ -1,5 +1,5 @@
 {
-  "name": "trainer-ai-labs-codespace",
+  "name": "trainerhub-codespace",
   "image": "mcr.microsoft.com/devcontainers/universal:2",
   "customizations": {
     "vscode": {
