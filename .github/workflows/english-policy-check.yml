@@ -1,0 +1,79 @@
+name: Language Policy Guidance
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, edited]
+  push:
+    branches: [main]
+
+jobs:
+    language-policy-guidance:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+            - name: Generate language policy guidance
+        shell: bash
+        run: |
+          python - << 'PY'
+          import sys
+          import re
+          from pathlib import Path
+
+          repo = Path('.')
+          excluded_dirs = {
+              '.git',
+              '.github/actions',
+              'node_modules',
+              '.venv',
+              'venv',
+              'dist',
+              'build',
+              'bin',
+              'obj',
+          }
+
+          text_extensions = {
+              '.md', '.txt', '.yml', '.yaml', '.json', '.toml', '.ini', '.xml',
+              '.py', '.js', '.ts', '.tsx', '.jsx', '.html', '.css', '.scss',
+              '.sh', '.ps1', '.psm1', '.env'
+          }
+
+          # CJK + Hangul + Hiragana/Katakana detection for guidance purposes.
+          non_english_pattern = re.compile(r'[\u1100-\u11FF\u3130-\u318F\uAC00-\uD7AF\u3040-\u30FF\u4E00-\u9FFF]')
+
+          violations = []
+
+          for path in repo.rglob('*'):
+              if not path.is_file():
+                  continue
+
+              rel = path.relative_to(repo)
+              rel_parts = set(rel.parts)
+              if rel_parts & excluded_dirs:
+                  continue
+
+              if path.suffix.lower() not in text_extensions:
+                  continue
+
+              try:
+                  content = path.read_text(encoding='utf-8')
+              except UnicodeDecodeError:
+                  continue
+
+              for line_no, line in enumerate(content.splitlines(), start=1):
+                  if 'english-check:ignore' in line:
+                      continue
+                  if non_english_pattern.search(line):
+                      violations.append(f"{rel}:{line_no}: {line.strip()}")
+
+          if violations:
+              print('Language policy guidance: non-English text detected in the following lines:')
+              for v in violations:
+                  print(f'- {v}')
+              print('Note: This check is advisory. English is the default language, but multilingual content is supported.')
+              sys.exit(0)
+
+          print('Language policy guidance check passed (English default baseline).')
+          PY
