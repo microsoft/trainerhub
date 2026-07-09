@@ -7,18 +7,18 @@ on:
     branches: [main]
 
 jobs:
-    language-policy-guidance:
+  language-policy-guidance:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-            - name: Generate language policy guidance
+      - name: Generate language policy guidance
         shell: bash
         run: |
           python - << 'PY'
-          import sys
           import re
+          import sys
           from pathlib import Path
 
           repo = Path('.')
