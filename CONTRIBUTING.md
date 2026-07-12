@@ -2,6 +2,12 @@
 
 Thank you for contributing to CAIP-Knowledge.
 
+## Scope of This Guide
+
+For shared mission, repository design principles, and GitHub/SharePoint positioning, refer to [README.md](README.md).
+
+This document focuses on day-to-day contribution execution.
+
 ## Rule 1: English by Default
 
 Use English as the default language for new content.
@@ -26,12 +32,13 @@ If you add non-English content, include an English summary when practical so glo
 
 English is the baseline for shared repository content so contributors across regions can work from the same default.
 
-## How to Add a Demo
+## How to Add an Asset
 
 1. Select the target domain folder: `AI/`, `Fabric/`, `GitHub/`, or `Copilot/`.
-2. Create or choose the correct folder under `Demos/` in that domain.
-3. Add a local README that explains objective, prerequisites, setup, and validation.
-4. Keep the demo reproducible in a clean environment.
+2. Select the category folder that best matches the asset type (demo, skill, code, best practice, template, or scenario).
+3. Create or choose the correct subfolder in that category.
+4. Add a local README that explains objective, prerequisites, setup, and validation.
+5. Keep the asset reproducible in a clean environment.
 
 ## Folder Structure Rules
 
@@ -61,3 +68,5 @@ Before opening a PR, confirm:
 - Steps are clear and testable
 - Naming follows repository conventions
 - README or usage docs are updated if needed
+- A reviewer from the relevant domain is requested
+- If structure or categorization changed, related README/docs are updated in the same PR
