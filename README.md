@@ -1,5 +1,5 @@
 <p align="center">
-<img src="./images/trainerhub-banner.png" alt="CAIP Knowledge">
+<img src="./images/trainerhub-banner2.png" alt="CAIP Knowledge">
 </p>
 
 # CAIP-Knowledge
