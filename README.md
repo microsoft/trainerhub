@@ -1,3 +1,7 @@
+<p align="center">
+<img src="./images/trainerhub-banner.png" alt="CAIP Knowledge">
+</p>
+
 # CAIP-Knowledge
 
 CAIP-Knowledge is a domain-based knowledge hub for trainer assets, organized by product area instead of content type.
