@@ -25,6 +25,7 @@ Our current priority is to collect and share useful assets quickly, then refine 
 - Domain-first: AI, Fabric, GitHub, Copilot
 - Each domain uses the same subfolder template
 - Course assets are organized by official course code under `Courses/`
+- Cross-domain and experimental assets use `Shared-Knowledge/`
 - Shared templates are centrally managed in root `Templates/`
 - Structure is intentionally flexible and will evolve as new asset types and contribution patterns emerge.
 
@@ -93,6 +94,13 @@ In short: GitHub is the execution-ready asset library; SharePoint is the wider t
 │  ├─ Skills/
 │  ├─ Code/
 │  └─ Best-Practices/
+├─ Shared-Knowledge/
+│  ├─ Learning-Day/
+│  ├─ Community-Contributions/
+│  ├─ Useful-Tools/
+│  ├─ Emerging-Technologies/
+│  ├─ Tips-and-Tricks/
+│  └─ Reference-Architectures/
 └─ Templates/
 ```
 
@@ -102,6 +110,29 @@ In short: GitHub is the execution-ready asset library; SharePoint is the wider t
 - [Fabric/](Fabric/)
 - [GitHub/](GitHub/)
 - [Copilot/](Copilot/)
+
+## Shared-Knowledge
+
+[Shared-Knowledge/](Shared-Knowledge/) contains cross-domain assets and team contributions that don't fit into specific domain folders.
+
+**Use Shared-Knowledge for:**
+
+- Content spanning multiple domains
+- Team Learning Day materials with executable components
+- Cross-domain utilities and tools
+- Emerging technologies and experimental content
+- Quick troubleshooting tips and productivity hacks
+- Multi-domain reference architectures
+
+**Use domain folders for:**
+
+- Content clearly tied to one domain
+- Production-ready, domain-specific assets
+
+See [Shared-Knowledge/README.md](Shared-Knowledge/README.md) for detailed guidance.
+
+## Templates
+
 - [Templates/](Templates/)
 
 ## Quick Contribution Guide
