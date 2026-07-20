@@ -45,6 +45,51 @@ This document does not cover:
 | Copilot Extension | Latest at test time |
 | Ollama | Latest at test time |
 
+## Prerequisites & Installation
+
+Before starting, ensure you have the following installed:
+
+### 1. NVIDIA Driver & CUDA
+
+- Download latest NVIDIA driver: [NVIDIA Driver Downloads](https://www.nvidia.com/Download/driverDetails.aspx)
+- For RTX 4050 Laptop on Windows: search `RTX 4050` and select your OS
+- CUDA Toolkit (optional for Ollama, but recommended): [CUDA Toolkit Downloads](https://developer.nvidia.com/cuda-downloads)
+  - Ollama will auto-detect CUDA for GPU acceleration
+
+### 2. Ollama
+
+- Download from: [ollama.com](https://ollama.com)
+- Windows installer available
+- After install, verify with: `ollama --version`
+- Ollama will run as a local service on `http://localhost:11434`
+
+### 3. VS Code
+
+- Download from: [code.visualstudio.com](https://code.visualstudio.com)
+- Install the GitHub Copilot extension (see next step)
+
+### 4. GitHub Copilot Extension
+
+- Open VS Code
+- Go to Extensions (Ctrl+Shift+X)
+- Search for "GitHub Copilot"
+- Install the official extension by GitHub
+
+### Quick Validation
+
+```powershell
+# Check NVIDIA GPU
+nvidia-smi
+
+# Check Ollama
+ollama --version
+
+# Verify Ollama service is running (should return version info)
+Invoke-WebRequest -Uri "http://localhost:11434/api/version"
+```
+
+If any tool is missing, follow the links above to install it first.
+
 ## Quick Start on Surface
 
 1. Validate GPU and runtime:
