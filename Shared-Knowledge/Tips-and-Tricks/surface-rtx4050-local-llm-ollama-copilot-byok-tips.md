@@ -1,4 +1,4 @@
-# Surface RTX4050 Local LLM Tips with Ollama and GitHub Copilot BYOK
+# Local LLM Setup on Surface Laptop with Ollama and Copilot BYOK
 
 ## Summary
 
