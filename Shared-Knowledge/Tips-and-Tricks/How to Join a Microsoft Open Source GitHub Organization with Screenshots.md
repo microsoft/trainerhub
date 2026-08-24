@@ -1,4 +1,17 @@
+[Share] How to Join a Microsoft Open Source GitHub Organization with Screenshots
 
+How to Join a Microsoft Open Source GitHub Organization
+
+For those who want to use GitHub with a Microsoft organization, I prepared a screenshot-based guide.
+
+I thought it would be easier to follow the process with screenshots rather than a long text explanation, so I captured each step in order. I hope this helps anyone who needs to join a Microsoft Open Source GitHub organization.
+
+Please follow the screenshots below from Microsoft SSO sign-in to joining the required GitHub organization and authorizing SSO for Git operations.
+
+Thanks to jeongwoo.choi@microsoft.com for the original guidance.
+
+First, Access the Microsoft Open Source portal:
+https://repos.opensource.microsoft.com
 
 <img width="753" height="347" alt="image" src="https://github.com/user-attachments/assets/ff2bde24-ca9e-4ff3-b1a2-532af1c9993f" />
 <img width="753" height="464" alt="image" src="https://github.com/user-attachments/assets/b4188bb1-831b-470e-96db-a0eae4eb5e76" />
