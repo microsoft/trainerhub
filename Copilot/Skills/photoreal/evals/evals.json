@@ -1,0 +1,37 @@
+{
+  "skill_name": "photoreal",
+  "evals": [
+    {
+      "id": 0,
+      "name": "eval-cafe-korean",
+      "prompt": "Create a photorealistic image of a Korean woman in her late twenties sitting by a cafe window.",
+      "expected_output": "One portrait that resembles a casual phone snapshot without an obvious AI-generated look.",
+      "assertions": [
+        "The subject is not looking directly into the camera.",
+        "The subject is not centered perfectly, and the composition is slightly imperfect.",
+        "The skin is not uniformly smooth; variations in texture and shading are visible.",
+        "The lighting is explainable by directional light present in the scene, such as window light, rather than studio three-point lighting.",
+        "Finger count and joints are anatomically plausible.",
+        "The smile is not exaggerated.",
+        "The subject remains appealing; realism has not eliminated attractiveness."
+      ],
+      "files": []
+    },
+    {
+      "id": 1,
+      "name": "eval-selfie-us",
+      "prompt": "Create a photorealistic selfie of an American woman in her mid-twenties in her apartment.",
+      "expected_output": "One portrait with the angle and optical distortion characteristic of an arm's-length selfie.",
+      "assertions": [
+        "The composition reads as an arm's-length selfie, with the face close and high in the frame.",
+        "Wide-angle distortion is visible.",
+        "One shoulder tilts toward the extended arm.",
+        "The skin is not uniformly smooth.",
+        "Only lighting present in the room illuminates the subject.",
+        "Finger count and joints are anatomically plausible.",
+        "The subject remains appealing and attractive."
+      ],
+      "files": []
+    }
+  ]
+}
