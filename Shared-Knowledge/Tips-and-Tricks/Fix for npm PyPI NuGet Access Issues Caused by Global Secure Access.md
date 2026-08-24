@@ -36,6 +36,6 @@ Thanks to everyone who helped investigate and share the workaround.
 
 Hopefully this helps others who encounter similar issues.
 
-![이미지](blob:https://teams.microsoft.com/9d052181-822d-4aaa-8ee3-3356be4475e2)
+<img width="2541" height="1095" alt="image" src="https://github.com/user-attachments/assets/4a76bcfc-0776-4c42-a27e-543d944b1fbb" />
+<img width="741" height="595" alt="image" src="https://github.com/user-attachments/assets/272feb8a-cc6c-4ae3-a3c5-3aaac5d472dc" />
 
-![이미지](blob:https://teams.microsoft.com/755b311f-cf1e-4d2e-a129-abd347d403c6)
