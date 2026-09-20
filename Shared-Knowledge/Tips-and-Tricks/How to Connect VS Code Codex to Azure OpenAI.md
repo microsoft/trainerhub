@@ -146,6 +146,7 @@ wire_api = "responses"
 > When using the Azure OpenAI v1 API, include `/openai/v1` in the `base_url`.
 
 ---
+<img width="1026" height="783" alt="image" src="https://github.com/user-attachments/assets/31afcd65-35b1-47cc-a4b8-b7de38bedd51" />
 
 ## 4. Windows and WSL Considerations
 
