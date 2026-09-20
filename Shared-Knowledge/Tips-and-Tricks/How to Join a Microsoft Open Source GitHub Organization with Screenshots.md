@@ -24,6 +24,3 @@ https://repos.opensource.microsoft.com
 <img width="752" height="709" alt="image" src="https://github.com/user-attachments/assets/cd6db236-73d6-4ac7-bfc7-8dceb3d50a13" />
 <img width="753" height="349" alt="image" src="https://github.com/user-attachments/assets/c3fc9a93-c428-486b-9d1a-613ffcb07f3b" />
 
-
-
-
