@@ -50,6 +50,7 @@ https://<resource-name>.openai.azure.com
 > For example, if you deploy `gpt-5.5` using the deployment name `my-gpt-5.5`, configure Codex with `model = "my-gpt-5.5"`.
 
 ---
+<img width="1415" height="653" alt="image" src="https://github.com/user-attachments/assets/ee86db6d-273b-43dd-91ef-f5d27aa77192" />
 
 ## 2. Store the API Key in a Local Environment Variable
 
