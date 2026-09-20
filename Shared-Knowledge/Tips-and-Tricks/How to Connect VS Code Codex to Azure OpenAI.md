@@ -55,6 +55,8 @@ https://<resource-name>.openai.azure.com
 
 On Windows, you can store the Azure OpenAI API key as a user-level environment variable using PowerShell.
 
+> **Important security requirement:** Store the API key in an environment variable. Never place the API key directly in `config.toml`, any other configuration file, or source control. The configuration should contain only the environment variable name through `env_key`.
+
 Run:
 
 ```powershell
@@ -84,6 +86,8 @@ $env:AZURE_OPENAI_API_KEY
 ```
 
 > **Security recommendation:** Do not store the API key directly in `config.toml` or commit it to a Git repository. The `env_key` setting should reference the name of the environment variable containing the API key.
+>
+> **Recommended after setup:** Because the API key is stored in a user-level environment variable, sign out of Windows and sign back in whenever possible before starting VS Code again. This helps ensure that VS Code and Codex receive the updated environment variable. At a minimum, completely close and restart VS Code.
 
 ---
 
@@ -231,6 +235,8 @@ wire_api = "responses"
 ---
 
 ## Official Documentation
+
+Always review the latest Microsoft official documentation before configuring or troubleshooting Codex with Azure OpenAI. Product requirements and configuration details may change, so use the links below as the authoritative source.
 
 - [Codex with Azure OpenAI in Microsoft Foundry Models](https://learn.microsoft.com/azure/ai-foundry/openai/how-to/codex)
 - [Azure OpenAI Responses API](https://learn.microsoft.com/azure/ai-foundry/openai/how-to/responses)
