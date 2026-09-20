@@ -1,6 +1,6 @@
 # How to Connect VS Code Codex to Azure OpenAI
 
-As MTTs, we are increasingly getting opportunities to work not only with Copilot, but also with coding agents such as Codex.
+We are increasingly getting opportunities to work not only with Copilot, but also with coding agents such as Codex.
 
 While exploring Codex myself, I tested how to configure **VS Code Codex to use a model deployed in Azure OpenAI**. I thought this could also be useful for other MTTs who want to experiment with Codex while using Azure OpenAI, so I decided to document and share the setup process.
 
