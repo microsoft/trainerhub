@@ -61,7 +61,7 @@ On Windows, you can store the Azure OpenAI API key as a user-level environment v
 Run:
 
 ```powershell
-:SetEnvironmentVariable(
+[System.Environment]::SetEnvironmentVariable(
     "AZURE_OPENAI_API_KEY",
     "<Azure OpenAI API Key>",
     "User"
@@ -73,7 +73,7 @@ Do not include `<` or `>` when entering the actual API key.
 For example, if your API key is `abc123`, use:
 
 ```powershell
-:SetEnvironmentVariable(
+[System.Environment]::SetEnvironmentVariable(
     "AZURE_OPENAI_API_KEY",
     "abc123",
     "User"
